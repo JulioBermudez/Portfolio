@@ -1,0 +1,180 @@
+:root {
+    --dark: #002e47;
+    --light: rgb(110, 211, 207);
+    --bur_img: blur(2px);
+  }
+  /*----------General Selectors----------*/
+  
+  a {
+    color: var(--light);
+    font-family: "serif";
+    font-size: 120%;
+    text-decoration: solid;
+  }
+  h3 {
+    position: absolute;
+    z-index: 1;
+    bottom: 15%;
+    left: -5px;
+    text-align: center;
+    background-color: var(--dark);
+    color: var(--light);
+    border: var(--light) solid;
+    cursor: grab;
+  }
+  span {
+    font-size: 60%;
+  }
+  a:hover {
+    color: aliceblue;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  /*----------Header section----------*/
+  header {
+    background-color: var(--dark);
+    display: flex;
+    flex-wrap: wrap;
+  }
+  header section {
+    width: 8%;
+    position: fixed;
+    z-index: 1;
+    left: 5px;
+  }
+  header section img {
+    border-radius: 100%;
+    object-fit: fill;
+    position: relative;
+    border-style: solid black;
+    
+  }
+  header h1 {
+    border: solid 1px;
+    background-color: var(--light);
+    width: 20%;
+    height: 28%;
+    font-size: 180%;
+    font-family: "Times New Roman", Times, serif;
+    text-align: right;
+    padding: 0.2% 0.5% 0.2% 0%;
+    margin: 0.5%;
+    margin-left: 4%;
+    position: static;
+  }
+  header nav {
+    width: 75.4%;
+  }
+  header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-size: 100%;
+    margin-top: 1.4%;
+  }
+  
+  /*----------Big Picture With Text Block----------*/
+  .big_pic {
+    width: 100%;
+    height: 350px;
+    position: relative;
+  }
+  .big_pic img {
+    position: relative;
+    object-fit: cover;
+  }
+  .big_pic h2 {
+    position: absolute;
+    bottom: 15%;
+    right: 150px;
+    color: aliceblue;
+    font-size: 100%;
+  }
+  
+  /*----------Left Side Config----------*/
+  .left_side {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .title {
+    font-size: 250%;
+    text-align: end;
+    padding: 1% 1% 0% 0%;
+    color: var(--dark);
+  }
+  .left_side .title {
+    width: 13%;
+    border-right: var(--dark) solid 6px;
+  }
+  .left_side .container_section {
+    width: 83%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 0.5% 0% 0% 3%;
+    margin: 0% 0% 2% 0%;
+  }
+  
+  /*----------Paragraph----------*/
+  .left_side .container_section p {
+    margin: 1%;
+  }
+  
+  /*----------Config of 4 Pictures----------*/
+  .pictures {
+    position: relative;
+    width: 48%;
+    height: 150px;
+    border: var(--dark) solid 5px;
+    margin: 20px 10px 0px 10px;
+  }
+  .pictures img {
+    position: relative;
+    object-fit: cover;
+    filter: var(--bur_img);
+  }
+  .pictures img:hover {
+    filter: blur(0);
+    cursor: grab;
+  }
+  
+  /*----------List of Contact Me Section----------*/
+  .container_section ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+  .container_section ul a {
+    color: var(--dark);
+  }
+  
+  /*----------Config of Horiseon Picture----------*/
+  #horiseon {
+    position: relative;
+    width: 97.8%;
+    height: 450px;
+    border: var(--dark) solid 5px;
+  }
+  #horiseon h3 {
+    position: absolute;
+    bottom: 10%;
+  }
+  #horiseon img {
+    object-fit: cover;
+    filter: var(--bur_img);
+  }
+  #horiseon img:hover {
+    filter: blur(0);
+    cursor: grab;
+  }
+  
+  @media screen and (max-width: 1280px) {
+  
+  }
+  
