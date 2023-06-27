@@ -157,7 +157,6 @@ header nav ul {
   color: var(--dark);
 }
 
-
 /*----------Config of Horiseon Picture----------*/
 #horiseon {
   position: relative;
@@ -189,50 +188,38 @@ header nav ul {
     .pictures {
       width: 100%;
     }
-   .title {
-    font-size:30px;
+    .title {
+      font-size: 30px;
     }
     .container_section ul {
-        font-size: 1.5vw;
+      font-size: 1.5vw;
     }
   }
-  @media screen and (max-width: 935px){
-    
-    header h1 {
-        width: 100%;
-    }
-    header nav  {
-        width: 100%;
-    }
-    header section{
-        width: 11vw;
-    }
-    #about_me {
-        display: block;
-    }
-    #about_me h2 {
-        font-size: 120%;
-        border: none;
-    }
-    #about_me .container_section {
-        width: 100%;
-    }
-    #work {
-        font-size: 120%;
-    }
-    #contact_me h2{
-        font-size: 120%;
-        border: none;
-    }
+}
+@media screen and (max-width: 935px) {
+  header section {
+    width: 11vw;
   }
-  @media screen and (max-width: 500px){
-    #work{
-        border: none;
-    }
+  #about_me {
+    display: block;
   }
 
-
-
-
-
-
+  #about_me .container_section,
+  header h1,
+  header nav {
+    width: 100%;
+  }
+  #work {
+    font-size: 120%;
+  }
+  #contact_me h2,
+  #about_me h2 {
+    font-size: 120%;
+    border: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  #work {
+    border: none;
+  }
+}
