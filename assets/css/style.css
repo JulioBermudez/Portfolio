@@ -32,7 +32,6 @@ img {
   width: 100%;
   height: 100%;
 }
-
 /*----------Header section----------*/
 header {
   background-color: var(--dark);
@@ -49,19 +48,18 @@ header section img {
   border-radius: 100%;
   object-fit: fill;
   position: relative;
-  border-style: solid black;
 }
 header h1 {
   border: solid 1px;
   background-color: var(--light);
   width: 20%;
   height: 28%;
-  font-size: 180%;
+  font-size: 200%;
   font-family: "Times New Roman", Times, serif;
   text-align: right;
   padding: 0.2% 0.5% 0.2% 0%;
   margin: 0.5%;
-  margin-left: 4%;
+  margin-left: 35px;
   position: static;
 }
 header nav {
@@ -71,14 +69,13 @@ header nav ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  font-size: 100%;
+  font-size: 120%;
   margin-top: 1.4%;
 }
 
 /*----------Big Picture With Text Block----------*/
 .big_pic {
-  width: 100%;
-  height: 350px;
+  height: 27vw;
   position: relative;
 }
 .big_pic img {
@@ -87,10 +84,10 @@ header nav ul {
 }
 .big_pic h2 {
   position: absolute;
-  bottom: 15%;
-  right: 150px;
+  right: 4vw;
+  bottom: 1vw;
   color: aliceblue;
-  font-size: 100%;
+  font-size: 1.2vw;
 }
 
 /*----------Left Side Config----------*/
@@ -99,10 +96,11 @@ header nav ul {
   flex-wrap: wrap;
 }
 .title {
-  font-size: 250%;
+  font-size: 40px;
   text-align: end;
   padding: 1% 1% 0% 0%;
   color: var(--dark);
+  margin-left: 15px;
 }
 .left_side .title {
   width: 13%;
@@ -123,6 +121,12 @@ header nav ul {
 }
 
 /*----------Config of 4 Pictures----------*/
+.container4pic {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
 .pictures {
   position: relative;
   width: 48%;
@@ -153,6 +157,7 @@ header nav ul {
   color: var(--dark);
 }
 
+
 /*----------Config of Horiseon Picture----------*/
 #horiseon {
   position: relative;
@@ -172,6 +177,62 @@ header nav ul {
   filter: blur(0);
   cursor: grab;
 }
+/*------------------------------------------------*/
+@media screen and (max-width: 1580px) {
+  header h1 {
+    width: 30%;
+  }
+  header nav {
+    width: 65%;
+  }
+  @media screen and (max-width: 1250px) {
+    .pictures {
+      width: 100%;
+    }
+   .title {
+    font-size:30px;
+    }
+    .container_section ul {
+        font-size: 1.5vw;
+    }
+  }
+  @media screen and (max-width: 935px){
+    
+    header h1 {
+        width: 100%;
+    }
+    header nav  {
+        width: 100%;
+    }
+    header section{
+        width: 11vw;
+    }
+    #about_me {
+        display: block;
+    }
+    #about_me h2 {
+        font-size: 120%;
+        border: none;
+    }
+    #about_me .container_section {
+        width: 100%;
+    }
+    #work {
+        font-size: 120%;
+    }
+    #contact_me h2{
+        font-size: 120%;
+        border: none;
+    }
+  }
+  @media screen and (max-width: 500px){
+    #work{
+        border: none;
+    }
+  }
 
-@media screen and (max-width: 1280px) {
-}
+
+
+
+
+
